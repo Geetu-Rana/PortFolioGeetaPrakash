@@ -208,7 +208,7 @@ nav i {
 } */
 
 main {
-  background: url(../../assets/img/bg.png) repeat;
+  background: url(assets/img/bg.png) repeat;
   padding-left: 190px;
 }
 
@@ -607,7 +607,7 @@ small {
     margin: auto;
 }
   .profilePic{
-    content:url("/assets/img/myExpImg/profilePic.png");
+    content:url("assets/img/myExpImg/profilePic.png");
     width: 100%;
     border-radius: 50%;
     border: 6px solid rgba(0, 77, 64, 0.4); 
