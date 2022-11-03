@@ -212,7 +212,7 @@
         <div class="col-md-9">
           <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
             <div class="profileDiv">
-              <img src="" class="profilePic" alt="">
+              <img src="" id="ppic" class="profilePic" alt="">
             </div>
             <div class="caption">
               <h2>Hi, I'm <span class="" style="background-color:rgba(41, 84, 102, 0.576);">Geeta Prakash Rana</span></h2>
@@ -530,7 +530,7 @@ such as login/sign up, view a product, add a product to cart, checkout the order
               <div class="col s4 m2">
                 <img alt="" src="assets/img/skills/gitHub.png" class="responsive-img" />GitHub
               </div>
-              
+
             </div>
           </div>
         </div>
@@ -649,6 +649,31 @@ such as login/sign up, view a product, add a product to cart, checkout the order
       })
     })
   </script>
+
+<script>
+    function myFunction(x) {
+      if (x.matches) { // If media query matches
+        document.body.style.backgroundImage= "url(assets/img/bg.png)"
+      }
+    }
+    
+    var x = window.matchMedia("(min-width: 60px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+    function myFunctionb(y){
+    if (y.matches) { // If media query matches
+        document.getElementById("ppic").style.content= "url(assets/img/myExpImg/profilePic.png)"
+      }
+    }
+    
+    var y = window.matchMedia("(max-width: 990px)")
+    myFunctionb(y) // Call listener function at run time
+    y.addListener(myFunction) 
+  
+  
+  </script>
+
 </body>
 
 </html>
+
