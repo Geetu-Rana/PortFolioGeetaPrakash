@@ -208,7 +208,7 @@ nav i {
 } */
 
 main {
-  background: url(../../assets/img/bg.png) repeat;
+  /* background: url(../../assets/img/bg.png) repeat; */
   
   /* background-color:rgb(125, 131, 189); */
   padding-left: 190px;
@@ -311,7 +311,42 @@ h3 {
   padding: 30px 40px;
   text-transform: uppercase;
 }
+.gitCal{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
 
+}
+/* .gitCal>div{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+} */
+.git_cal{
+  display: flex;
+  flex-direction: column;
+}
+.git_cal>img{
+  width: 90%;
+  margin: auto;
+}
+
+.gitCal>h4{
+  font-weight: 200;
+  background-color: #00796b;
+  color: white; 
+  padding-left: 5px;
+  height: 50px;
+  text-transform: capitalize;
+}
+.git_stats{
+  display: flex;
+}
+.git_stats>img{
+  margin: auto;
+  width: 90%;
+  border-radius:10px;
+}
 .section {
   padding-bottom: 30px;
   padding-top: 0;
@@ -609,13 +644,17 @@ small {
     margin: auto;
 }
   .profilePic{
-    content:url("../../assets/img/myExpImg/profilePic.png");
+    /* content:url("../../assets/img/myExpImg/profilePic.png"); */
     width: 100%;
     border-radius: 50%;
     border: 6px solid rgba(0, 77, 64, 0.4); 
   }
   .buttons>a{
     padding:5px 18px ;
+  }
+  .git_stats{
+    display: flex;
+    flex-direction: column;
   }
 
   ul.side-nav a {
